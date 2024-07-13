@@ -324,10 +324,10 @@ function Optional-Setup {
             Start-BitsTransfer -Source https://github.com/V0lk3n/W11-SAWTheme/releases/download/Pre-Release/SawTheme.zip -Destination $PSScriptRoot\SawTheme.zip
             Write-Host "`n[+] Unzipping SawTheme..." -ForegroundColor Yellow
             $destSawTheme = "C:\Windows\Resources\Themes"
-            Expand-Archive $PSScriptRoot\..\SawTheme.zip -DestinationPath $destSawTheme
+            Expand-Archive $PSScriptRoot\SawTheme.zip -DestinationPath $destSawTheme
             Write-Host "[-] Theme Content Extracted to $destSawTheme\SawTheme location!" -ForegroundColor Green
             Write-Host "`n[+] Scheduling AutoUpdater Task..." -ForegroundColor Yellow
-            $arguments = "-NoProfile -ExecutionPolicy Bypass -File `"$destSawTheme\SawTheme\SETUP\SawTheme.ps1`""
+            $arguments = "-NoProfile -ExecutionPolicy Bypass -File `"$destSawTheme\SawTheme\Setup\SawTheme.ps1`""
             $action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument $arguments
             $trigger = New-ScheduledTaskTrigger -AtLogon
             $principal = New-ScheduledTaskPrincipal -UserId $env:UserName -LogonType Interactive -RunLevel Highest
