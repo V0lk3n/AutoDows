@@ -10,7 +10,7 @@ Yes, this code is ugly, I'm not a dev. I'm just tired to repeat the step at each
 
 # Installation
 
-You can use the EasyInstall way, run the PowerShell command bellow, AutoDows will be Downloaded and Extracted on Desktop, then the PS1 script will automatically be run.
+You can use the EasyInstall way, run the PowerShell command bellow, AutoDows will be Downloaded and Extracted on Desktop, then AutoUpdater.ps1 will automatically be run. It will ask user if AutoSetup and SawTheme need to be run at the end of Updates installation. If you need to run a specific script (SawTheme.ps1 as example), I suggest to download the release and run the specific script instead.
 
 ```
 (New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/V0lk3n/AutoDows/main/setup.bat") | iex
@@ -87,10 +87,14 @@ Once answered, it start installing each tools pack using Winget.
 
 ## SawTheme.ps1
 
+This Script isn't include inside AutoDows, it's here because AutoUpdater ask user if Yes or No it should install it.
+
 ### What it does?
 
 Apply a SAW Theme to your Windows 10 or 11 system.
 
+<a href="https://github.com/V0lk3n/W11-SAWTheme/">SawTheme Repository</a>
+
 ### How?
 
-Refere to the repository README.
+<a href="https://github.com/V0lk3n/W11-SAWTheme/">For more information refere to SawTheme repository.</a>
