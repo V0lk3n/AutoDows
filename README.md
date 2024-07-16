@@ -1,10 +1,22 @@
 # AutoDows - WIP
 
-Personal Script Collection for Auto Update, Auto Setup and Auto Install SAW Theme on a fresh Windows 10 or 11 install.
+**NOTE : This is in Work In Progress, yes there is a Release because it should work as intended on Windows 10 or 11, bug may be possible, open an issue if needed.**
+
+"Personal" Script Collection for Auto Update, Auto Setup and Auto Install SAW Theme on a fresh Windows 10 or 11 install.
 
 # Disclaimer
 
 Yes, this code is ugly, I'm not a dev. I'm just tired to repeat the step at each fresh installation.
+
+# Installation
+
+You can use the EasyInstall way, run the PowerShell command bellow, AutoDows will be Downloaded and Extracted on Desktop, then the PS1 script will automatically be run.
+
+```
+(New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/V0lk3n/AutoDows/main/setup.bat") | iex
+```
+
+Or you can Download the Release zip file, extract it, and run it manually.
 
 # Documentation
 
