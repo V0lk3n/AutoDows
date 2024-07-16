@@ -321,7 +321,7 @@ function Optional-Setup {
             Write-Host "`n[+] Setting up Saw Theme for Installation..." -ForegroundColor Yellow
             Write-Host "`n======Saw Theme Installation======" -ForegroundColor Cyan
             Write-Host "`n[+] Downloading SawTheme..." -ForegroundColor Yellow
-            Start-BitsTransfer -Source https://github.com/V0lk3n/W11-SAWTheme/releases/download/Pre-Release/SawTheme.zip -Destination $PSScriptRoot\SawTheme.zip
+            Start-BitsTransfer -Source https://github.com/V0lk3n/SawTheme/releases/download/Pre-Release/SawTheme.zip -Destination $PSScriptRoot\SawTheme.zip
             Write-Host "`n[+] Unzipping SawTheme..." -ForegroundColor Yellow
             $destSawTheme = "C:\Windows\Resources\Themes"
             Expand-Archive $PSScriptRoot\SawTheme.zip -DestinationPath $destSawTheme
