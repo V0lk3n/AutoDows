@@ -91,7 +91,7 @@ function cleaning {
     Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" -Name $programName -ErrorAction SilentlyContinue
     Write-Host "[-] Startup program '$programName' disabled successfully." -ForegroundColor Green
     # Remove Startup Shortcut
-    Remove-Item -Path "C:\Users\V0lk3n\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk"
+    Remove-Item -Path "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk"
     Write-Host "[-] Startup Shortcut Removed.`n`n" -ForegroundColor Green
 }
 
